@@ -8,25 +8,61 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <br>
-        <label for="name"> Nome e Cognome</label></br>
-        <input id="name" type="text"/>
-        </br></br>
+    <h1>CALCOLA IL PREZZO DEL TUO BIGLIETTO</h1>
+    <div id="form-sect">
+        <div class="flex f-sp-bet data-sect">
+            <div>
+                <label for="name"> Nome e Cognome</label></br>
+                <input id="name" type="text"/>
+            </div>
 
-        <label for="jurneykm">Km da percorrere</label></br>
-        <input id="jurneykm" type="text"/>
-        </br></br>
+            <div>
+                <label for="jurneykm">Km da percorrere</label></br>
+                <input id="jurneykm" type="text"/>
+            </div>
 
-        <label for="eta">Fascia d'età</label></br>
-        <select name="età" id="eta">
-            <option value="minorenne">Meno di 18 anni</option>
-            <option value="adulto">Tra i 18 e i 65 anni</option>
-            <option value="anziano">Più di 65 anni</option>
-        </select>
-        </br></br>
+            <div>
+                <label for="eta">Fascia d'età</label></br>
+                <select name="età" id="eta">
+                    <option value=""></option>
+                    <option value="minorenne">Meno di 18 anni</option>
+                    <option value="adulto">Tra i 18 e i 65 anni</option>
+                    <option value="anziano">Più di 65 anni</option>
+                </select>
+            </div>
+            
+        </div>
 
         <button id="myBtn">Genera Biglietto</button>
-        <button>Annulla</button>
+        <button id="clear">Annulla</button>
+    </div>
+    <div class="ticket-creator HideTicket">
+        <h1>IL TUO BIGLIETTO</h1>
+        <div id="ticket-sect">
+            <h2>DETTAGLIO PASSEGGERI</h2>
+            <div class="flex ticket">
+                <div id="passenger-sect">
+                    <h2>NOME PASSEGGERO</h2>
+                    <p id="passenger"></p>
+                </div>
+                <div id="detail-sect" class="flex f-center">
+                    <table>
+                        <tr>
+                            <th>Offerta</th>
+                            <th>Carrozza</th>
+                            <th>Codice CP</th>
+                            <th>Costo biglietto</th>
+                        </tr>
+                        <tr>
+                            <td id="offer"></td>
+                            <td id="carriage"></td>
+                            <td id="code"></td>
+                            <td id="price"></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
     </div>
 
     <script type="text/javascript" src="js/main.js"></script>

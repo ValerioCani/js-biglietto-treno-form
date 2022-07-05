@@ -3,3 +3,78 @@
     padding:0;
     box-sizing: border-box;
 }
+
+.flex{
+    display: flex;
+}
+
+.f-sp-bet{
+    justify-content: space-between;
+}
+
+.f-center{
+    justify-content: center;
+}
+
+body{
+    background-color: #B91450;
+    color: #fff;
+}
+
+body h1{
+    text-align: center;
+}
+#form-sect{
+    width: 80%;
+    min-width: 1100px;
+    margin: 5rem auto;
+    text-align: center;
+    background-color: #fff;
+    border-radius: 1rem;
+    color: #B91450;
+}
+
+.data-sect{
+    padding: 3rem;
+}
+
+#form-sect button{
+    margin: 1rem;
+}
+
+#ticket-sect{
+    width: 80%;
+    min-width: 1100px;
+    margin: 5rem auto;
+    background-color: #fff;
+    padding: 1rem;
+    color: black;
+}
+
+#ticket-sect .ticket{
+    border: solid black 1px;
+    border-right: none;
+}
+
+#ticket-sect #passenger-sect{
+    background-color: #808080;
+}
+
+#passenger-sect{
+    text-align: center;
+    padding: 2.5rem;
+
+}
+
+#detail-sect{
+    padding: 1rem;
+    width: 100%;
+}
+
+#detail-sect th, #detail-sect td{
+    padding: 1rem;
+}
+
+.HideTicket{
+    display: none;
+}
