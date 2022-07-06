@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <h1>CALCOLA IL PREZZO DEL TUO BIGLIETTO</h1>
+    <h1>CALCOLA IL PREZZO DEL TUO BIGLIETTO (push post correzione del mattino)</h1>
     <div id="form-sect">
         <div class="flex f-sp-bet data-sect">
             <div>
@@ -18,7 +18,8 @@
 
             <div>
                 <label for="jurneykm">Km da percorrere</label></br>
-                <input id="jurneykm" type="text"/>
+                <input id="jurneykm" min="1" step="1" type="number"/>
+                <!-- min e step servono a indicare il valore minimo e ilpasso minimo tra due valori -->
             </div>
 
             <div>

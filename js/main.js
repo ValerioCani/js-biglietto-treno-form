@@ -13,7 +13,7 @@ function myFunction() {
     const etaRange = document.getElementById('eta').value;
     const prezzoPieno = kilometriNum * 0.21;
     const numeroCarrozza = Math.floor(Math.random() * 10);
-    const numeroCodice = Math.floor(Math.random() * 10001) + 90000;
+    const numeroCodice = Math.floor(Math.random() * 10000) + 90000;
     
     if (document.getElementById("name").value.length == 0 || document.getElementById("jurneykm").value.length == 0 || document.getElementById("eta").value.length == 0 ) {
         
@@ -39,7 +39,7 @@ function myFunction() {
                 break;
         
             default:
-                alert("inserire fascia d'età");
+                alert("inserire fascia d'età");//inutile
         }
         
         document.getElementById("passenger").innerHTML = nameAndSurname;
@@ -54,10 +54,13 @@ function myFunction() {
 function clearFunction() {
     document.getElementById("name").value ="";
     document.getElementById("jurneykm").value ="";
-    function setSelectValue (id, val) {
+    /*function setSelectValue (id, val) {
         document.getElementById(id).value = val;
     }
-    setSelectValue('eta', "");
+    setSelectValue('eta', "");*/
+    //ma c'era bisogno?      
+    document.getElementById("eta").value ="";
+    document.querySelector('.ticket-creator').classList.add('HideTicket');
 }
 
 
